@@ -48,7 +48,3 @@ Unet with residual blocks for generating similar images
 
 <img src="https://user-images.githubusercontent.com/48679574/98444082-17c94280-2153-11eb-8ddd-727d217fdfab.png" width="400px">
 
-
-
-## generate image2
-
