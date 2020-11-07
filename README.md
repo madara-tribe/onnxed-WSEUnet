@@ -2,15 +2,19 @@
 
 
 # SEnet
-
+<hr>
 Resblock include SEnet. It connects not deep wide but better performance NN for segmentation and generation
+
+![SENet](https://user-images.githubusercontent.com/48679574/98444753-c7ec7a80-2156-11eb-909d-a7e8caa784bc.png)
+
+
 
 
 
 
 
 # image preprocess(for imprping accuracy)
-
+<hr>
 I use "Histogram averaging" mainly just like bellow
 
 
@@ -31,6 +35,7 @@ https://trafalbad.hatenadiary.jp/entry/2019/12/01/170905
 
 
 # generate image by WSEUnet
+<hr>
 Unet with residual blocks for generating similar images
 
 
