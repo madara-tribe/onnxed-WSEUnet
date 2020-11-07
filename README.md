@@ -9,6 +9,8 @@ I use "Histogram averaging" mainly just like bellow
 
 
 <b>【HH Histogram averagings】 & 【HV Histogram averaging】</b>
+
+
 <img src="https://user-images.githubusercontent.com/48679574/98444008-8659d080-2152-11eb-9c47-07feccc88cee.png" width="500px">
 
 
