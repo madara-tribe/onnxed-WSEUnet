@@ -1,9 +1,15 @@
-# Wide_Residual_Unet
+# Wide_Residual_Unet's main features
 
 
-# main feature
+# SEnet
 
-## image preprocess(for imprping accuracy)
+Resblock include SEnet. It connects not deep wide but better performance NN for segmentation and generation
+
+
+
+
+
+# image preprocess(for imprping accuracy)
 
 I use "Histogram averaging" mainly just like bellow
 
