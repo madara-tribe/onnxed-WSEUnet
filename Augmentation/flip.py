@@ -12,10 +12,20 @@ def augmentation(annos):
     print(train_annos.shape, valid_annos.shape)
     return train_annos, valid_annos
 
-def fliplr(X, Y):
-    Xs = np.array([np.fliplr(img) for img in X])
-    Ys = np.array([np.fliplr(img) for img in Y])
-    return Xs, Ys
+def fliplrud_image(X, Y):
+    Xflip =np.array([img[::-1, ::-1] for img in X])
+    Yflip =np.array([img[::-1, ::-1] for img in Y])
+    return Xflip, Yflip
+
+def flipud_image(X, Y):
+    Xflip =np.array([img[::-1] for img in X])
+    Yflip =np.array([img[::-1] for img in Y])
+    return Xflip, Yflip
+    
+def fliplr_image(X, Y):
+    Xflip =np.array([img[:, ::-1] for img in X])
+    Yflip =np.array([img[:, ::-1] for img in Y])
+    return Xflip, Yflip
 
 
 def sift_angle(image, y_move_ratio=0, x_move_ratio=0, angle_ratio=float(np.pi/60)):
