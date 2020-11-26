@@ -14,6 +14,31 @@ adam=optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0
 model.compile(optimizer=adam, loss = 'mean_squared_error', metrics = ['accuracy'])
 model.summary()
 
+
+class trainGenerator(object):
+    def __init__(self):
+        self.img_generator=[]
+		self.mask_generator=[]
+		
+	def clear(self):
+		self.img_generator=[]
+		self.mask_generator=[]
+		
+    def flow_from_np(self, X, Y, batch_size=4):
+		while:
+			for imgs, mask in zip(X, Y):
+				self.img_generator.append(imgs)
+			    self.mask_generator.append(mask)
+			    if self.img_generator==batch_size and self.mask_generator==batch_size:
+				    input_img=np.array(self.img_generator)
+				    input_mask=np.array(self.mask_generator)
+				    self.clear()
+                    yield input_img, input_mask
+					
+gene = trainGenerator()
+training = gene.flow_from_np(X_train, Y_train, batch_size=4)
+
+
 class trainGenerator(object):
     def __init__(self):
         self.img_generator=[]
