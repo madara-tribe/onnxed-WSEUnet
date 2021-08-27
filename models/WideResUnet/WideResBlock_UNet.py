@@ -1,9 +1,10 @@
+import tensorflow.keras as keras
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import *
+from tensorflow.keras import backend as K
+from tensorflow.keras import layers
+
 from models.WideResUnet.ResBlock import dw_conv, res_block, up_conv
-import keras
-from keras.models import Model
-from keras.layers import *
-from keras import backend as K
-from keras import layers
 
 def create_model(nClass, input_shape=(256,256,3), regularizers = None, k=1, lr=1e-3):
     inputs = Input(shape=input_shape)

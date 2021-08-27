@@ -1,15 +1,12 @@
-from google.colab import drive
-drive.mount('/content/drive')
-
 import os
 import numpy as np
-import keras
-from keras import backend as K
-from keras.models import Model
-import matplotlib.pyplot as plt
-from keras.optimizers import *
-from keras.layers import *
 import tensorflow as tf
+import tensorflow.keras
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import Model
+import matplotlib.pyplot as plt
+from tensorflow.keras.optimizers import *
+from tensorflow.keras.layers import *
 import cv2
 from models.WideResUnet.WideResBlock_UNet import create_model
 

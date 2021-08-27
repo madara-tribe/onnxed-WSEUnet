@@ -1,9 +1,9 @@
-from keras.utils import np_utils
-from keras.models import *
-from keras.layers import *
-from keras.optimizers import *
-from keras.callbacks import *
-from keras import backend as keras
+from tensorflow.keras.utils import np_utils
+from tensorflow.keras.models import *
+from tensorflow.keras.layers import *
+from tensorflow.keras.optimizers import *
+from tensorflow.keras.callbacks import *
+from tensorflow.keras import backend as K
 
 
 class VAE:

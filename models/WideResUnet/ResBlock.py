@@ -1,10 +1,10 @@
-import keras
-from keras.models import Model
-from keras.layers import *
-from keras.optimizers import RMSprop, Adam, SGD
-from keras.losses import binary_crossentropy
-from keras import backend as K
-from keras import layers
+import tensorflow.keras as keras
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import *
+from tensorflow.keras.optimizers import RMSprop, Adam, SGD
+from tensorflow.keras.losses import binary_crossentropy
+from tensorflow.keras import backend as K
+from tensorflow.keras import layers
 import numpy as np
 #from bce_dice_loss import bce_dice_loss, dice_loss
 

@@ -1,29 +1,22 @@
-from google.colab import drive
-drive.mount('/content/drive')
-
 import os
 import numpy as np
 import math
-import keras
-from keras import backend as K
-from keras.models import Model
 import matplotlib.pyplot as plt
-from keras.callbacks import LearningRateScheduler, ModelCheckpoint
-from keras.optimizers import *
-from tensorflow.python.client import device_lib
-import tensorflow as tf
 import cv2
 import warnings
+
+import tensorflow.keras
+from tensorflow.keras import backend as K
+from tensorflow.keras import layers
+from tensorflow.keras.models import Model
+from tensorflow.keras.callbacks import LearningRateScheduler, ModelCheckpoint
+from tensorflow.keras.optimizers import *
+from tensorflow.python.client import device_lib
+import tensorflow as tf
 warnings.filterwarnings('ignore')
-from keras import backend as K
 K.clear_session()
 device_lib.list_local_devices()
 
-import keras
-from keras import layers
-from keras import backend as K
-from keras.models import Model
-import numpy as np
 
 
 def sampling(args):

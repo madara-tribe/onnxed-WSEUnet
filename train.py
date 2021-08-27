@@ -1,10 +1,11 @@
-import keras
-from keras.models import Model
-from keras.layers import *
-from keras.optimizers import RMSprop, Adam, SGD
-from keras.losses import binary_crossentropy
-from keras import backend as K
-from keras import layers
+import tensorflow.keras as keras
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import *
+from tensorflow.keras.optimizers import RMSprop, Adam, SGD
+from tensorflow.keras import backend as K
+from tensorflow.keras import layers
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 import numpy as np
 import os
 import math
@@ -13,8 +14,8 @@ import cv2
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 from datetime import datetime
-from keras.preprocessing.image import ImageDataGenerator
 
+from loss.bce_dice_loss import bce_dice_loss
 from augumention import sift_angle, flips
 from models.WideResUnet.WideResBlock_UNet import create_model
 

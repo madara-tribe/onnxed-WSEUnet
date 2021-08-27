@@ -1,10 +1,12 @@
-from keras.applications.resnet50 import ResNet50,preprocess_input
-from keras.layers import *
-import keras
-from keras import backend as K
-from keras.models import Model
 import tensorflow as tf
-from keras import optimizers
+from tensorflow.keras.applications.resnet50 import ResNet50,preprocess_input
+from tensorflow.keras.layers import *
+import tensorflow.keras
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import Model
+from tensorflow.keras import optimizers
+
+
 IMAGE_ORDERING =  "channels_last"
 def up_conv(last_layer, channel_num):
     up7 = UpSampling2D(size=(2, 2),data_format=IMAGE_ORDERING, interpolation="bilinear")(last_layer) #56x56x256

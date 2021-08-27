@@ -1,4 +1,3 @@
-from __future__ import print_function
 from PIL import Image, ImageDraw
 import numpy as np
 import os
@@ -9,14 +8,14 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 
 import numpy as np
-from keras.utils import np_utils
-from keras.models import *
-from keras.layers import *
-from keras.optimizers import *
-from keras.callbacks import *
-from keras import backend as keras
-from keras.utils.vis_utils import model_to_dot
-from keras.utils import plot_model
+from tensorflow.keras.utils import np_utils
+from tensorflow.keras.models import *
+from tensorflow.keras.layers import *
+from tensorflow.keras.optimizers import *
+from tensorflow.keras.callbacks import *
+from tensorflow.keras import backend as K
+from tensorflow.keras.utils.vis_utils import model_to_dot
+from tensorflow.keras.utils import plot_model
 from VAE import VAE
 from HistoryCallbackLoss import HistoryCheckpoint
 from tensorflow.python.client import device_lib

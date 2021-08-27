@@ -1,5 +1,5 @@
-from keras.losses import binary_crossentropy
-from keras import backend as K
+from tensorflow.keras.losses import binary_crossentropy
+from tensorflow.keras import backend as K
 import numpy as np
 
 def dice_loss(y_true, y_pred):

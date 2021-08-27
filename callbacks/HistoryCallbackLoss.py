@@ -3,7 +3,7 @@ History Checkpoint Class Module
 """
 
 from enum import Enum
-import keras.callbacks as KC
+import tensorflow.keras.callbacks as KC
 from matplotlib import pyplot
 
 class TargetHistory(Enum):
