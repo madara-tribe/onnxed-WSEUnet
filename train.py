@@ -12,7 +12,7 @@ from tensorflow.keras import backend as K
 from tensorflow.keras.callbacks import *
 
 
-from loss.bce_dice_loss import bce_dice_loss
+from losses.bce_dice_loss import bce_dice_loss
 from Augmentation import sift_angle, flip
 from models.WSEUNet.WSEUnet import create_model
 from option_parser import get_option
