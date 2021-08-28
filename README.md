@@ -1,4 +1,4 @@
-# Wide_Residual_Unet's main features
+# Wide Residual block Unet
 
 
 # SEnet
