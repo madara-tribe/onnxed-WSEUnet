@@ -4,7 +4,7 @@ from tensorflow.keras.layers import *
 from tensorflow.keras import backend as K
 from tensorflow.keras import layers
 import tensorflow_addons as tfa
-
+import numpy as np
 
 def dw_conv(init, nb_filter, k, kl_reg = None):
     residual = Conv2D(nb_filter * k, (1, 1), strides=(2, 2), padding='same', use_bias=False)(init)
