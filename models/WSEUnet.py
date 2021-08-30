@@ -6,9 +6,7 @@ from models.blocks import dw_conv, res_block, up_conv
 
 def create_model(nClass, input_shape=(256,256,3),k=1, lr=1e-3):
     inputs = Input(shape=input_shape)
-
     i = 0
-
     nb_filter = [16, 32, 64, 128, 256, 512, 256, 128, 64, 32, 16]
 
     #0
