@@ -21,30 +21,21 @@ Resblock include SEnet. It connects not deep wide but better performance NN for 
 
 
 
-# image preprocess(for imprping accuracy)
-<hr>
-I use "Histogram averaging" mainly just like bellow
+# Unet types
+- Wide SEblock Unet
+- EfficientNet Unet
+- Wide SEblock Unet like ResNet-RS with mish activation
+
+# Onnx convert
+
+you can convert all models to onnx.
+```
+cd onnx
+python3 onnx_convert.py
+```
 
 
-<b>【HH Histogram averagings】 & 【HV Histogram averaging】</b>
-<hr>
-
-<img src="https://user-images.githubusercontent.com/48679574/98444008-8659d080-2152-11eb-9c47-07feccc88cee.png" width="500px">
-
-
-
-
-Details of these code and logics I've done were written below site.(my blog)
-
-https://trafalbad.hatenadiary.jp/entry/2019/12/01/170905
-
-
-
-
-
-
-
-# generate image by WSEUnet
+# generate image 
 <hr>
 Unet with residual blocks for generating similar images
 
