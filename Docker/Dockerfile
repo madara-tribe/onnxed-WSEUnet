@@ -22,8 +22,7 @@ RUN ln -s /usr/local/bin/python3.7 /bin/python3 && \
     ln -s /usr/local/bin/pip3.7 /bin/pip3
 
 RUN pip3 install --upgrade pip
-RUN pip3 uninstall tensorflow
-RUN pip3 install tensorflow-gpu==${TF_VERSION}
+RUN pip3 install tensorflow-gpu==${TF_VERSION} tensorflow-addons
 RUN pip3 install keras==${KERAS_VERSION}
 COPY requirements.txt /tmp/requirements.txt
 RUN pip3 install -r /tmp/requirements.txt
