@@ -2,7 +2,7 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.layers import *
 from tensorflow.keras import backend as K
 import tensorflow_addons as tfa
-from models.blocks import dw_conv, res_block, up_conv
+from models.SEUNet.blocks import dw_conv, res_block, up_conv
 
 def create_model(nClass, input_shape=(256,256,3),k=1, lr=1e-3):
     inputs = Input(shape=input_shape)
