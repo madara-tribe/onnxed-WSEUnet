@@ -52,12 +52,9 @@ Unet with residual blocks for generating similar images
 <img src="https://user-images.githubusercontent.com/48679574/98444065-f8321a00-2152-11eb-934d-3f14722065f2.png" width="400px">
 
 
-## generate image1
+## generate image1 && generate iamge2 
 
-<img src="https://user-images.githubusercontent.com/48679574/98444075-0b44ea00-2153-11eb-8398-7762cff25291.png" width="400px">
+<img src="https://user-images.githubusercontent.com/48679574/98444075-0b44ea00-2153-11eb-8398-7762cff25291.png" width="400px"><img src="https://user-images.githubusercontent.com/48679574/98444082-17c94280-2153-11eb-8ddd-727d217fdfab.png" width="400px">
 
 
-## generate iamge2 
-
-<img src="https://user-images.githubusercontent.com/48679574/98444082-17c94280-2153-11eb-8ddd-727d217fdfab.png" width="400px">
 
