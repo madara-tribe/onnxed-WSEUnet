@@ -11,7 +11,7 @@
 
 # SEnet
 <hr>
-Resblock include SEnet. It connects not deep wide but better performance NN for segmentation and generation
+Resblock include Squeeze-and-Excitation network(SEnet). It connects not deep wide but better performance NN for segmentation and generation
 
 ![SENet](https://user-images.githubusercontent.com/48679574/98444753-c7ec7a80-2156-11eb-909d-a7e8caa784bc.png)
 
@@ -22,9 +22,10 @@ Resblock include SEnet. It connects not deep wide but better performance NN for 
 
 
 # Unet types
-- Wide SEblock Unet
+- Wide SEblock Unet (with Squeeze-and-Excitation network)
 - EfficientNet Unet
 - Wide SEblock Unet like ResNet-RS with mish activation
+
 
 # Onnx convert
 
