@@ -1,5 +1,13 @@
 # Wide Residual block Unet with onnx
 
+# Version
+- python 3.7.0
+- tensorflow=='2.3.0'
+- keras=='2.3.1'
+- onnx==1.10.1
+- keras2onnx=='1.9.0'
+- onnxruntime=='1.8.1'
+
 
 # SEnet
 <hr>
