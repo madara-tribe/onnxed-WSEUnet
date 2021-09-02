@@ -36,7 +36,7 @@ python3 onnx_convert.py
 ```
 
 
-# generate image 
+# Font convert (generate image)
 <hr>
 Unet with residual blocks for generating similar images
 
